@@ -121,8 +121,15 @@ ul li{
 	margin-bottom: 20px;
 
 }
-
-
+textarea{
+	margin-bottom: 20px;
+}
+button.btn.btn-primary{
+	margin-bottom: 27px;
+}
+form label{
+	color: white;
+}
 
 @media screen and (max-width: 980px){
 	.aside{
@@ -130,12 +137,11 @@ ul li{
 		margin-top: 10px;
 	}
 
-
 }
+
 @media screen and (max-width: 768px){
 	#first_nav_item , #second_nav_item{
-	border-right: none;
-	
+	border-right: none;	
 }
 .navbar-nav{
 	font-size: 130%;
@@ -150,8 +156,6 @@ ul li{
 
 
 }
-
-
 
 @media screen and (max-width: 640px){
 	

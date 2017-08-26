@@ -2,62 +2,91 @@
 <html>
 <head>
 	<title>Negin's Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Tenor+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Tenor+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 </head>
 <body>
-<div>
-	<header> Negin Namiranian </header>
-	<nav>
-		<ul>
-			<li><a href="index.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+<div class="container nav_container">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+      	  </button>
+	      <h1 class="navbar-brand">Negin Namiranian</h1>
+	    </div>
+	   <div class="collapse navbar-collapse" id="myNavbar">
+	    <ul class="nav navbar-nav navbar-right">
+	      
+	      <li id="first_nav_item"><a href="index.html">About</a></li>
+	      <li id="second_nav_item"><a href="portfolio.html">Portfolio</a></li>
+	      <li id="third_nav_item"><a href="contact.html">Contact</a></li>
+	    </ul>
+	  </div>
+	  </div>
 	</nav>
 </div>
-<div class="content">
-	<section>
-		<h1>Contact</h1>
-		<div class="main_content">
-			<form action="#">
-				<div class="field">
-					<label>Name</label>
-					<input type="text" name="name" size="71" >
-				</div>
-				<div class="field">
-					<label>Email</label>
-					<input type="text" name="email" size="71">
-				</div>
-				<div class="field">
-					<label>Message</label>
-					<textarea rows="20" cols="72"></textarea>
-				</div>
-				<div class="field">
-				<input class="submit" type="submit" name="submit" value="Submit">
-				</div>
-				
-			</form>		
+<div class="container main_container">
+	<div class="row">
+		<div class="col-lg-8 col-md-8 col-s-12 col-xs-12 about_me_section">
+			<h1 id="title">Contact</h1>
+			<div class="main_portfolio_content">
+				<form action="/action_page.php">
+	    			 <div class="form-group">
+					     <label>Name</label>
+					     <input type="text" class="form-control" id="email" name="email">
+    				 </div>
+    				<div class="form-group">
+				      <label>Email</label>
+				      <input type="email" class="form-control" id="pwd" name="pwd">
+				    </div>
+				    <label>Message</label>
+				   <textarea class="form-control" rows="5" id="comment"></textarea>
+					
+    				<button type="submit" class="btn btn-primary">Submit</button>
+  				</form>
+			</div>
+		</div>
+		<div class="col-lg-1 col-md-1 col-s-12 col-xs-12"></div>
+		<div class="col-lg-3 col-md-3 col-s-12 col-xs-12 aside">
+			
+			<h2>Connect with Me</h2>
+			<div class="imgs">
+				<a href="https://github.com/NeginNami">
+				<img class="img-responsive" src="assets/images/github_logo.png" width="50" height="50">
+				</a>
+				<a href="https://www.linkedin.com/in/negin-namiranian-96b44913b/">
+				<img class="img-responsive" src="assets/images/linkedin_logo.png" width="50" height="50">
+				</a>
+				<a href="https://www.facebook.com/lorem.ipsum.kl/">
+				<img class="img-responsive" src="assets/images/facebook_logo.png" width="50" height="50">
+				</a>
+			</div>
+	
+			
 		</div>
 		
-	</section>
-	<aside>
-		<h2>Connect with Me</h2>
-		<div class="imgs">
-			<a href="https://github.com/NeginNami"><img src="assets/images/github_logo.png" width="50" height="50"></a>
-			<a href="https://www.linkedin.com/in/negin-namiranian-96b44913b/"><img src="assets/images/linkedin_logo.png" width="50" height="50"> </a>
-			<a href="https://www.facebook.com/lorem.ipsum.kl/"><img src="assets/images/facebook_logo.png" width="50" height="50"></a>
-		</div>
-	</aside>
+	</div>
+	
+	</div>
+
+
+<div id="sticky_footer" class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container">
+
+		<p id="sticky_footer_text" class="navbar-text">&copy 2017 Negin Namiranian</p>
+		
+	</div>
+	
 </div>
 
-
-	<footer>
-		<P>	&copy 2017 Negin Namiranian </P>
-	</footer>
-
-
-</body >
+</body>
 </html>
