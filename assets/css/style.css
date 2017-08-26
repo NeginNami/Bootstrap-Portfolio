@@ -116,6 +116,11 @@ ul li{
 .imgs img{
 	display: inline-block;
 }
+.imgP{
+	margin: auto;
+	margin-bottom: 20px;
+
+}
 
 
 
